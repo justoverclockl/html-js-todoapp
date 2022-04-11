@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(61,103,179);
+    background: -moz-radial-gradient(circle, rgba(61,103,179,1) 0%, rgba(35,42,94,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(61,103,179,1) 0%, rgba(35,42,94,1) 100%);
+    background: radial-gradient(circle, rgba(61,103,179,1) 0%, rgba(35,42,94,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3d67b3",endColorstr="#232a5e",GradientType=1);
+    font-family: Verdana, serif;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+.todo-app {
+    color: #fff;
+    text-align: center;
+}
+.title-todo {
+    margin-top: 8rem;
+}
+.title-todo h1 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+input#text {
+    padding: 1rem;
+    border: none;
+    font-size: 1.4rem;
+    height: 4rem;
+    width: 100%;
+    border-radius: 5px;
+    outline-offset: 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 37px 20px -20px;
+}
+input#text:focus{
+    outline: none;
+    outline-offset: 0;
+}
+
+.slider-wrapper {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slogan {
+    margin-bottom: 2rem;
+    margin-top: 7px;
+}
+.slider{
+    height: 50px;
+    padding-left:15px;
+    overflow: hidden;
+}
+.slider div {
+    color:#fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.slider-text1 {
+    background: lightgreen;
+    animation: slide 5s linear infinite;
+}
+.slider-text2 {
+    background: skyblue;
+}
+.slider-text3 {
+    background: lightcoral;
+}
+.input-todo {
+    display: flex;
+}
+.todo.items {
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button.add-todo {
+    width: 70px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #f96c6c;
+    color: #fff;
+    font-size: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 37px 20px -20px;
+    cursor: pointer;
+}
+li.todo-li {
+    display: inline-block;
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+    min-width: 500px;
+    text-align: left;
+    border-radius: 5px;
+}
+.todo-item {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+button.flag-button {
+    padding: 1.1rem;
+    margin-left: 5px;
+    border: none;
+    background: greenyellow;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.flag-button:hover {
+    background: green;
+}
+button.delete-button {
+    padding: 1.1rem;
+    margin-left: 5px;
+    border: none;
+    background: red;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+button.delete-button:hover {
+    background: crimson;
+}
+li.todo-li.flagged {
+    background: #9dffc0;
+    text-decoration: line-through;
+    transition: all 1s ease;
+}
+button.add-todo:hover {
+    background: #ff7b7b;
+}
+.fa-check,
+.fa-trash-can {
+    pointer-events: none;
+}
+@keyframes slide {
+    0% {margin-top:-300px;}
+    5% {margin-top:-200px;}
+    33% {margin-top:-200px;}
+    38% {margin-top:-100px;}
+    66% {margin-top:-100px;}
+    71% {margin-top:0px;}
+    100% {margin-top:0px;}
+}

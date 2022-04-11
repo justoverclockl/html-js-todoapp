@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="todo-app">
+        <div class="title-todo">
+            <div class="slider-wrapper">
+                La tua ToDo
+                <div class="slider">
+                    <div class="slider-text1">LIST</div>
+                    <div class="slider-text2">APP</div>
+                    <div class="slider-text3">PAGE</div>
+                </div>
+            </div>
+            <p class="slogan">Un App sviluppata da Dennis e Marco, per aiutarti a ricordare...</p>
+        </div>
+        <div class="input-todo">
+            <input type="text" id="text" name="text" placeholder="Cosa ti resta da fare oggi?...">
+            <button class="add-todo" type="submit" id="add-todo">&plus;</button>
+        </div>
+    </div>
+    <div class="todo items" id="todo-items"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
